@@ -7,19 +7,61 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <EditText
-        android:gravity="center"
-        android:id="@+id/et"
-        android:layout_width="250dp"
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Hello World!"
-      />
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="send"
+        android:text="Bulb"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_dark"
         />
+
+   <androidx.appcompat.widget.SwitchCompat
+       android:id="@+id/switch1"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+
+
+       />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fan"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_red_dark"
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+
+            />
+    </LinearLayout>
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btn"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="send"-->
+<!--        />-->
 
 </LinearLayout>
